@@ -156,6 +156,7 @@
 'Gate of Ra Deluxe' Novomatic 5x3 videoslot
 'Geisha Wonders' NetEnt 5x3 videoslot
 'Gems' AGT 5x3 videoslot
+'Goblin's Gold' CT Interactive 5x3 videoslot
 'God of Sun' Novomatic 5x3 videoslot
 'Goddess of Bells' CT Interactive 5x3 videoslot
 'Golden Acorn' CT Interactive 5x4 videoslot
@@ -287,6 +288,7 @@
 'Santa' AGT 4x4 videoslot
 'Sapphire Lagoon' CT Interactive 5x3 videoslot
 'Satyr and Nymph' CT Interactive 5x3 videoslot
+'Satyr and Nymph Dice' CT Interactive 5x3 videoslot
 'Secret Elixir' Novomatic 5x3 videoslot
 'Secret Forest' Novomatic 5x3 videoslot
 'Secret Of Horus' NetEnt 5x3 videoslot
@@ -351,11 +353,11 @@
 'Wonder 7's' CT Interactive 5x3 videoslot
 'Zeus' AGT 4x4 videoslot
 
-total: 348 games, 177 algorithms, 11 providers
+total: 350 games, 177 algorithms, 11 providers
 AGT: 65 games
 Aristocrat: 6 games
 BetSoft: 3 games
-CT Interactive: 144 games
+CT Interactive: 146 games
 IGT: 5 games
 Megajack: 4 games
 NetEnt: 22 games

@@ -21,14 +21,14 @@ var LinePay = [sn][5]float64{
 	{0, 0, 20, 30, 100}, //  4 melon
 	{0, 0, 20, 30, 100}, //  5 apple
 	{0, 0, 15, 30, 100}, //  6 pear
-	{0, 0, 15, 20, 100}, //  7 orange
-	{0, 0, 15, 20, 100}, //  8 lemon
-	{0, 0, 10, 20, 50},  //  9 plum
-	{0, 0, 10, 20, 50},  // 10 cherry
+	{0, 0, 15, 20, 50},  //  7 orange
+	{0, 0, 15, 20, 50},  //  8 lemon
+	{0, 0, 15, 20, 50},  //  9 plum
+	{0, 0, 15, 20, 50},  // 10 cherry
 }
 
 // Bet lines
-var BetLines = slot.BetLinesAgt5x3[:]
+var BetLines = slot.BetLinesCT5x3[:]
 
 type Game struct {
 	slot.Grid5x3 `yaml:",inline"`

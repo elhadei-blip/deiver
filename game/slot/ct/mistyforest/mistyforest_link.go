@@ -13,7 +13,8 @@ var data []byte
 
 var Info = game.AlgInfo{
 	Aliases: []game.GameAlias{
-		{Prov: "CT Interactive", Name: "Misty Forest", LNum: 20, Date: game.Date(2017, 10, 5)}, // see: https://www.slotsmate.com/software/ct-interactive/misty-forest
+		{Prov: "CT Interactive", Name: "Misty Forest", LNum: 20, Date: game.Date(2017, 10, 5)},  // see: https://www.slotsmate.com/software/ct-interactive/misty-forest
+		{Prov: "CT Interactive", Name: "Goblin's Gold", LNum: 20, Date: game.Date(2023, 5, 12)}, // see: https://www.livebet.com/casino/slots/ct-interactive/goblin-s-gold
 	},
 	AlgDescr: game.AlgDescr{
 		GT: game.GTslot,
