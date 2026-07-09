@@ -69,7 +69,7 @@ func CalcStatEuro(ctx context.Context, sp *slot.ScanPar, s *slot.StatGeneric, x,
 		defer cancel2()
 		go func() {
 			defer wg.Done()
-			slot.ProgressBF(ctx2, sp, s, calc, float64(reels.Reshuffles()))
+			slot.ProgressBF(ctx2, sp, s, calc, g.Cost(), float64(reels.Reshuffles()))
 		}()
 		BruteForceEuro(ctx2, s, g, reels, x, y)
 	}()

@@ -15,7 +15,7 @@ local gamescript = "ct/winfeast.lua"
 -- number of reels at videoslot
 local reelnum = 5
 -- number of generator iterations
-local N = 20
+local N = 50
 -- RTP granulation, can be 0.5, 1.0, 2.0
 local gran = 0.5
 
@@ -52,7 +52,7 @@ local function generate()
 	f:close()
 
 	-- run scanner
-	local cltpl = "%s -f=\"%s\" scan --noembed -g=\"%s\" -r=50 --casc" -- command line template
+	local cltpl = "%s --noembed -f=\"%s\" scan -g=\"%s\" -r=50 --casc" -- command line template
 	local cl = string.format(cltpl, slotpath, genfile, gamename) -- command line parameters
 	local h = io.popen(cl)
 	if not h then

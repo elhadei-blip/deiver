@@ -4,14 +4,14 @@ dofile(scripts.."lib/makereel.lua")
 local symset24 = {
 	0, --  1 wild    (1, 3 reels only)
 	0, --  2 scatter (1, 3, 5 reels only)
-	4, --  3 seven   500/60/20
+	3, --  3 seven   500/60/20
 	4, --  4 melon   100/30/20
 	4, --  5 apple   100/30/20
 	4, --  6 pear    100/30/15
 	4, --  7 orange  50/20/15
 	4, --  8 lemon   50/20/15
-	4, --  9 plum    50/20/15
-	4, -- 10 cherry  50/20/15
+	5, --  9 plum    50/20/15
+	5, -- 10 cherry  50/20/15
 }
 
 local symset13 = tcopy(symset24)

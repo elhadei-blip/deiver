@@ -597,7 +597,7 @@ func ScanReels(ctx context.Context, sp *ScanPar, s Simulator, g SlotGeneric, ree
 		case game.CMbruteforce:
 			go func() {
 				defer wg.Done()
-				ProgressBF(ctx2, sp, s, calc, float64(reels.Reshuffles()))
+				ProgressBF(ctx2, sp, s, calc, g.Cost(), float64(reels.Reshuffles()))
 			}()
 			bruteforce(ctx2, sp, s, g, reels)
 		case game.CMmontecarlo:

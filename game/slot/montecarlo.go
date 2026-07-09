@@ -29,9 +29,9 @@ func ProgressMC(ctx context.Context, sp *ScanPar, s Simulator, calc func(io.Writ
 	)
 	var param = func() {
 		dur = time.Since(t0)
+		N, S, Q = s.NSQ(cost)
 		RTP, D = calc(io.Discard)
 		if math.IsNaN(D) {
-			N, S, Q = s.NSQ(cost)
 			var µ = S / N
 			D = Q/N - µ*µ
 		}
@@ -77,9 +77,9 @@ func MonteCarlo(ctx context.Context, sp *ScanPar, s Simulator, g SlotGeneric, re
 			defer wg.Done()
 
 			var wins Wins
-			var N uint64
-			for N = 0; N < total/tn64; N++ {
-				if N%CtxGranulation == 0 {
+			var i uint64
+			for i = 0; i < total; i += tn64 {
+				if i%CtxGranulation == 0 {
 					// check on break
 					select {
 					case <-ctx.Done():
